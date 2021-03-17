@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './index.css';
+import '../index.css';
+import Header from './Header.js';
+import Main from './Main.js';
 
 function App() { 
   return (
     <div className="root">
-      <header className="header root__section">
-        <img src={logo} alt="mesto logo" className="logo" />
-      </header>
-      <div className="profile root__section">
-        <div className="user-info">
-          <div className="user-info__photo"></div>
-          <div className="user-info__data">
-            <h1 className="user-info__name"></h1>
-            <p className="user-info__job"></p>
-            <button className="button user-info__edit-button">Edit</button>
-          </div>
-          <button className="button user-info__button">+</button>
-        </div>
-      </div>
-      <div className="places-list root__section">
-      </div>
+      <Header />
+      <Main />
 
       <div className="popup">
         <div className="popup__content">
